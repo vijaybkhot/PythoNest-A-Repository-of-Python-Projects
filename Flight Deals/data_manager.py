@@ -15,7 +15,7 @@ class DataManager:
         # This class is responsible for talking to the Google Sheet.
         # Google Sheet details
         # Sheety API endpoint and headers
-        self.bearer = "asdasdasdqwdqwdcascas"
+        self.bearer = "#Your bearer id"
         self.headers_sheety_bearer = {
             "Authorization": f"Bearer {self.bearer}",
             "Content-Type": 'application/json',
@@ -101,10 +101,4 @@ class DataManager:
         else:
             print(f"Error: Unable to get sheet data. Status code: {response_emails.status_code}")
 
-# Create an instance of the DataManager class
-#data_manager = DataManager()
-# Call the method to update sheet data
-#sheet_data = {'prices': [{'city': 'Paris', 'iataCode': 'PAR', 'lowestPrice': 54, 'id': 2}, {'city': 'Berlin', 'iataCode': 'BER', 'lowestPrice': 42, 'id': 3}, {'city': 'Tokyo', 'iataCode': 'TYO', 'lowestPrice': 485, 'id': 4}, {'city': 'New Delhi', 'iataCode': 'SYD', 'lowestPrice': 551, 'id': 5}, {'city': 'Istanbul', 'iataCode': 'IST', 'lowestPrice': 95, 'id': 6}, {'city': 'Kuala Lumpur', 'iataCode': 'KUL', 'lowestPrice': 414, 'id': 7}, {'city': 'San Francisco', 'iataCode': 'SFO', 'lowestPrice': 260, 'id': 8}, {'city': 'Cape Town', 'iataCode': 'CPT', 'lowestPrice': 378, 'id': 9}, {'city': 'Mumbai', 'iataCode': 'BOM', 'lowestPrice': 900, 'id': 10}]}
 
-#pprint(sheet_data)
-#data_manager.update_destination_codes(sheety_data=sheet_data)
