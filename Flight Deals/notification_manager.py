@@ -3,8 +3,8 @@ from twilio.rest import Client
 import smtplib
 
 # Twilio API credentials
-account_sid = "AC972ae7b4c92e28a1e2807813235f2550"
-auth_token = "6bf288fde82ba2087dae1cee73b6856a"
+account_sid = "TWILIO SID"
+auth_token = "TWILIO AUTH TOKEN"
 client_twilio = Client(account_sid, auth_token)
 client_twilio_whatsapp = Client(account_sid, auth_token)
 
@@ -18,19 +18,19 @@ class NotificationManager:
         self.client_twilio_whatsapp = Client(account_sid, auth_token)
         self.client_twilio = Client(account_sid, auth_token)
         self.my_email = "vijay.b.khot.01@gmail.com"
-        self.my_password = "xihh ijio vdpv keow"
+        self.my_password = "MY PASSWORD"
 
     def send_message(self, message):
         # Send SMS using Twilio
         message_twilio = self.client_twilio.messages.create(
             body=message,
-            from_='+1(866) 699-4459',
-            to='+15512414753'
+            from_='+text number sender',
+            to='text number receiver'
         )
         whatsapp_message_twilio = self.client_twilio_whatsapp.messages.create(
             body=message,
-            from_='whatsapp:+14155238886',
-            to='whatsapp:+917276481813'
+            from_='whatsapp number sender',
+            to='whatsapp number receiver'
         )
 
     def send_email(self, subject, message, to_email):
