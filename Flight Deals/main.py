@@ -9,7 +9,7 @@ from flight_search import FlightSearch
 
 import requests
 
-API_KEY = "TmDXPj6kav5X_Dz2T9AX-10mteBzq_JE"
+API_KEY = "TEQUILA API KEY"
 TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
 
 data_manager = DataManager()
