@@ -6,8 +6,8 @@ class Notification:
         """
         Initialize the Notification class with the sender's email and password.
         """
-        self.my_email = "vijay.b.khot.01@gmail.com"
-        self.my_password = "xihh ijio vdpv keow"
+        self.my_email = "My Email"
+        self.my_password = "My Password"
 
     def send_email(self, date, quantity, signal):
         """
@@ -29,6 +29,6 @@ class Notification:
             connection.login(user=self.my_email, password=self.my_password)
             connection.sendmail(
                 from_addr=self.my_email,
-                to_addrs="vijaysinh.khot@gmail.com",
+                to_addrs="receivers email",
                 msg=message
             )
