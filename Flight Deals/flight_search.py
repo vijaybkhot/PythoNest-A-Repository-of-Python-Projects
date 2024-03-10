@@ -6,7 +6,7 @@ from flight_data import FlightData
 from pprint import pprint
 
 
-API_KEY = "TmDXPj6kav5X_Dz2T9AX-10mteBzq_JE"
+API_KEY = "TEQUILA API KEY"
 TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
 
 
